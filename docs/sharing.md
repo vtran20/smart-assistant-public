@@ -62,8 +62,8 @@ This public repository starts from a reviewed source-only snapshot with a fresh
 Git history. The owner's personal repository, task history and raw receipts are
 maintained separately and are not distributed here. Only reviewed reusable
 changes belong in this repository.
-No license file is currently supplied; confirm appropriate ownership and sharing
-terms before wider redistribution.
+Reusable Smart Assistant source is distributed under the [MIT License](../LICENSE).
+Personal records and third-party/customer material are outside the public project.
 
 Local tests verify helper behavior and source packaging. They do not establish
 Codex native role activation, connected-service access or customer runtime

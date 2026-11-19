@@ -245,3 +245,8 @@ result and establish the required setup rather than weakening checks.
 - [Sharing, customization and folder conventions](docs/sharing.md).
 - [Architecture and contracts](docs/superpowers/specs/2026-10-12-smart-assistant-system-design.md).
 - Consolidation scope and verification (local historical archive: `docs/evidence/github-consolidation-20261112/design.md`).
+
+## License
+
+Reusable Smart Assistant source is available under the [MIT License](LICENSE).
+Personal records and third-party/customer materials retain their own rights.
