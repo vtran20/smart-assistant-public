@@ -1,0 +1,12 @@
+{
+  "ready": false,
+  "missing_tools": [
+    "tool:unavailable"
+  ],
+  "pending_actions": [
+    {
+      "action_ref": "action-02",
+      "reason": "Host approval required"
+    }
+  ]
+}

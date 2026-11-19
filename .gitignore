@@ -1,0 +1,48 @@
+# Private runtime, intermediate work, and isolated checkouts
+.smart-assistant/
+work/
+.worktrees/
+.superpowers/
+outputs/
+# Python cache and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+# Secrets and machine-local project state
+.env
+.env.*
+!.env.example
+.idea/
+.DS_Store
+
+# Private capability drafts before reviewed native deployment
+capabilities/staging/
+
+# Native P09 runtime stderr may contain signed media URLs; preserve exact local logs
+/docs/evidence/p09/**/*stderr.log
+
+# Raw host stderr may contain signed URLs; publish sanitized summaries instead.
+*stderr.log
+
+# Owner-only archives and preferences: preserve locally, never distribute receipts.
+/docs/evidence/*
+!/docs/evidence/p12/
+/docs/evidence/p12/*
+!/docs/evidence/p12/interfaces.md
+!/docs/evidence/p16/
+/docs/evidence/p16/*
+!/docs/evidence/p16/interfaces.md
+/config/codex/AGENTS.md
+/docs/personal-rules-backup.md
+/docs/portfolio-maintenance.md
+/docs/worktree-artifact-preservation.md
+/docs/superpowers/plans/2026-11-13-sbh-background-task-scope.md
+/docs/superpowers/plans/2026-11-16-xstore-regression.md
+# Uncommitted owner utilities remain local with their matching tests.
+/smart_assistant/personal_rules.py
+/tests/test_personal_rules.py
+/smart_assistant/flow_timing.py
+/tests/test_flow_timing.py
+# Optional personal overrides; reviewed generic examples belong in examples/.
+AGENTS.local.md

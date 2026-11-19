@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "core",
+  "state": "DRAFT",
+  "root": {
+    "display_name": "Tom",
+    "identity": "bootstrap-root"
+  },
+  "roles": [
+    {
+      "capability_id": "engineering-lead",
+      "display_name": "Jerry",
+      "version": "2.0.0",
+      "state": "DRAFT",
+      "source_path": "examples/agents/engineering-lead/versions/2.0.0/engineering-lead.toml"
+    },
+    {
+      "capability_id": "implementer",
+      "display_name": "Implementer",
+      "version": "1.0.0",
+      "state": "DRAFT",
+      "source_path": "examples/agents/implementer/versions/1.0.0/implementer.toml"
+    },
+    {
+      "capability_id": "code-reviewer",
+      "display_name": "Code reviewer",
+      "version": "1.0.0",
+      "state": "DRAFT",
+      "source_path": "examples/agents/code-reviewer/versions/1.0.0/code-reviewer.toml"
+    },
+    {
+      "capability_id": "qa-verifier",
+      "display_name": "QA verifier",
+      "version": "1.0.0",
+      "state": "DRAFT",
+      "source_path": "examples/agents/qa-verifier/versions/1.0.0/qa-verifier.toml"
+    },
+    {
+      "capability_id": "researcher",
+      "display_name": "Researcher",
+      "version": "1.0.0",
+      "state": "DRAFT",
+      "source_path": "examples/agents/researcher/versions/1.0.0/researcher.toml"
+    },
+    {
+      "capability_id": "knowledge-curator",
+      "display_name": "Knowledge curator",
+      "version": "1.0.0",
+      "state": "DRAFT",
+      "source_path": "examples/agents/knowledge-curator/versions/1.0.0/knowledge-curator.toml"
+    }
+  ]
+}

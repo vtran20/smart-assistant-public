@@ -1,0 +1,53 @@
+{
+  "schema": "xstore-triage-assessment/1",
+  "additional_fields": false,
+  "required_fields": {
+    "schema_version": "integer exactly 1",
+    "case_id": "nonempty supplied case identifier",
+    "role_id": "string exactly xstore-triage; declared role identity, not activation proof",
+    "knowledge": "object exactly {id: xstore-triage-procedures, version: 1.0.0, sha256: raw complete external pack-file SHA256, not deployment manifest SHA}",
+    "disposition": "ready_for_review | blocked | out_of_scope",
+    "summary": "nonempty source-grounded concise string",
+    "observations": "array of objects exactly {id: unique nonempty string, statement: nonempty string, source_refs: nonempty SourceRef array}",
+    "gates": "array of objects exactly {id: nonempty gate string, status: GateStatus, reason: nonempty string, observation_ids: array of existing observation ids}; supported/contradicted/stale require nonempty observation_ids; not_proven or not_applicable may have empty observation_ids only with an explicit reason for absent evidence or scoped nonapplicability",
+    "next_checks": "array of objects exactly {question: concrete read-only diagnostic/evidence question, reason: case-specific usefulness, source_refs: SourceRef array, execution: not_executed}; source_refs may be empty when asking for missing evidence",
+    "blockers": "array of nonempty strings describing essential missing inputs/access; nonempty when disposition=blocked",
+    "limits": "nonempty array of nonempty strings; independent semantic review remains required and no customer/live/native acceptance implied"
+  },
+  "SourceRef": {
+    "path": "safe relative path from the controller-provided selected input inventory; no absolute paths, traversal, symlink escape, URI or unsupplied file",
+    "start_line": "integer >=1",
+    "end_line": "integer >= start_line and <= actual file line count"
+  },
+  "GateStatus": [
+    "supported",
+    "not_proven",
+    "contradicted",
+    "not_applicable",
+    "stale"
+  ],
+  "gate_examples": [
+    "configuration",
+    "generated",
+    "compiled",
+    "packaged",
+    "schema",
+    "server_started",
+    "transport",
+    "rendered",
+    "authenticated",
+    "business",
+    "hardware",
+    "performance",
+    "payment_protocol",
+    "payment_outcome"
+  ],
+  "disposition_rules": [
+    "ready_for_review means useful assessment is ready for independent review; untested customer gates can remain not_proven. It never means task completed or independent acceptance.",
+    "blocked is required only when an essential missing input/tool/access prevents a requested conclusion; retain any supported partial observations. Do not convert every uncertainty into a blocked task.",
+    "out_of_scope is for non-Xstore requests; no invented Xstore observations or arbitrary diagnostic list.",
+    "Supported/contradicted/stale decisions require current relevant cited observations. A fluent unsupported conclusion or generic all-not-proven/all-blocked response fails positive case criteria.",
+    "Observations are facts in selected input ranges; hypotheses are explicitly labeled in summary/reason. No invented owner/date/cause/version facts. Redact sensitive values; use safe IDs and ranges.",
+    "A real existing-v1 TaskAssignment requires a genuine Handoff in addition to its owned assessment artifact. An unassigned advisory/source evaluation must not invent task/revision/selection identities."
+  ]
+}

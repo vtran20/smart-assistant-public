@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "cases": [
+    {"case_id": "repeated-spaces", "required": true, "requirement_ids": ["r01"], "proof_level": "unit", "inputs": [{"input": "alpha  beta", "expected": "alpha beta"}]},
+    {"case_id": "repeated-tabs", "required": true, "requirement_ids": ["r01"], "proof_level": "unit", "inputs": [{"input": "alpha\t\tbeta", "expected": "alpha beta"}]},
+    {"case_id": "embedded-newline", "required": true, "requirement_ids": ["r01"], "proof_level": "unit", "inputs": [{"input": "alpha\nbeta", "expected": "alpha beta"}]},
+    {"case_id": "mixed-whitespace", "required": true, "requirement_ids": ["r01", "r02"], "proof_level": "unit", "inputs": [{"input": " \talpha \n\t beta \n", "expected": "alpha beta"}]},
+    {"case_id": "edge-whitespace", "required": true, "requirement_ids": ["r02"], "proof_level": "unit", "inputs": [{"input": " \talpha beta \n", "expected": "alpha beta"}]},
+    {"case_id": "already-normalized", "required": true, "requirement_ids": ["r03"], "proof_level": "unit", "inputs": [{"input": "alpha beta", "expected": "alpha beta"}]},
+    {"case_id": "unicode-punctuation", "required": true, "requirement_ids": ["r03"], "proof_level": "unit", "inputs": [{"input": "Café ☕ — done!", "expected": "Café ☕ — done!"}]},
+    {"case_id": "empty-blank", "required": true, "requirement_ids": ["r04"], "proof_level": "unit", "inputs": [{"input": "", "expected": ""}, {"input": " \t\n ", "expected": ""}]}
+  ]
+}

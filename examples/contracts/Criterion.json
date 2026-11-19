@@ -1,0 +1,5 @@
+{
+  "id": "criterion-01",
+  "description": "Check synthetic output",
+  "verification_method": "unittest"
+}

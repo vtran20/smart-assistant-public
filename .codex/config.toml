@@ -1,0 +1,3 @@
+# Project-scoped configured agents; model, effort and permissions inherit caller defaults.
+[agents]
+enabled = true

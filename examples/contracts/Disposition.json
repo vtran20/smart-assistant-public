@@ -1,0 +1,8 @@
+{
+  "finding_id": "finding-01",
+  "decision": "corrected",
+  "reason": "Title clarified",
+  "evidence_refs": [
+    "diff:synthetic"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "action_ref": "action-01",
+  "kind": "write_local",
+  "resource_ref": "outputs/report.txt",
+  "required_tool": null,
+  "host_decision": "allowed"
+}

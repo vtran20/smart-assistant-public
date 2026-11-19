@@ -1,0 +1,13 @@
+{
+  "files": [
+    {
+      "relative_path": "SKILL.md",
+      "sha256": "c754047df91498371094e9b9a225b55c27b3c266f4f54c8aae6fdcfe4279ed8f"
+    },
+    {
+      "relative_path": "references/guide.md",
+      "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }
+  ],
+  "manifest_sha256": "f7db606cd8531930f393ffef80fd6f8e0909b2055eaf65c4b1cdee4dff3eda9a"
+}

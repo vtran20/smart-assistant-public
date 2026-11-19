@@ -1,0 +1,88 @@
+{
+  "cycle_number": 1,
+  "design_ref": "design:synthetic",
+  "candidate": {
+    "artifacts": [
+      {
+        "id": "artifact-01",
+        "relative_path": "outputs/report.txt",
+        "sha256": "c754047df91498371094e9b9a225b55c27b3c266f4f54c8aae6fdcfe4279ed8f"
+      }
+    ],
+    "candidate_id": "ec7116265eb9ed061027ba89f4f7fb6c57edb1201f01f78d79220aa4f70e1791"
+  },
+  "acceptance": {
+    "criteria": [
+      {
+        "id": "criterion-01",
+        "description": "Check synthetic output",
+        "verification_method": "unittest"
+      }
+    ],
+    "design_sha256": "c754047df91498371094e9b9a225b55c27b3c266f4f54c8aae6fdcfe4279ed8f",
+    "acceptance_id": "9819bc19aad331aa71f83f6c39062c43bdd6cbddadc26ddf904d0a6ccdd25e39"
+  },
+  "review": {
+    "reviewer_ref": "reviewer:synthetic",
+    "implementer_ref": "writer:synthetic",
+    "candidate_id": "ec7116265eb9ed061027ba89f4f7fb6c57edb1201f01f78d79220aa4f70e1791",
+    "acceptance_id": "9819bc19aad331aa71f83f6c39062c43bdd6cbddadc26ddf904d0a6ccdd25e39",
+    "observed_at": "2026-10-13T12:34:56.123Z",
+    "findings": [
+      {
+        "id": "finding-01",
+        "severity": "minor",
+        "description": "Clarify section title",
+        "criterion_ids": [
+          "criterion-01"
+        ]
+      }
+    ]
+  },
+  "dispositions": [
+    {
+      "finding_id": "finding-01",
+      "decision": "corrected",
+      "reason": "Title clarified",
+      "evidence_refs": [
+        "diff:synthetic"
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "check_id": "check-01",
+      "criterion_ids": [
+        "criterion-01"
+      ],
+      "candidate_id": "ec7116265eb9ed061027ba89f4f7fb6c57edb1201f01f78d79220aa4f70e1791",
+      "acceptance_id": "9819bc19aad331aa71f83f6c39062c43bdd6cbddadc26ddf904d0a6ccdd25e39",
+      "method": "command",
+      "command": "python3 -m unittest tests.test_contracts",
+      "observation": null,
+      "environment": {
+        "python": "3.11"
+      },
+      "outcome": "pass",
+      "evidence_ref": "test:synthetic",
+      "observed_at": "2026-10-13T12:34:56.123Z"
+    },
+    {
+      "check_id": "check-02",
+      "criterion_ids": [
+        "criterion-01"
+      ],
+      "candidate_id": "ec7116265eb9ed061027ba89f4f7fb6c57edb1201f01f78d79220aa4f70e1791",
+      "acceptance_id": "9819bc19aad331aa71f83f6c39062c43bdd6cbddadc26ddf904d0a6ccdd25e39",
+      "method": "observation",
+      "command": null,
+      "observation": "All requested sections present",
+      "environment": {
+        "python": "3.11"
+      },
+      "outcome": "pass",
+      "evidence_ref": "test:synthetic",
+      "observed_at": "2026-10-13T12:34:56.123Z"
+    }
+  ]
+}

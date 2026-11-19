@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "operation_id": "operation-01",
+  "capability_id": "writer-01",
+  "version": "1.0.0",
+  "manifest_sha256": "caac765556bda421e7e5b3e462b1c327c7509daabd132c97cb6adb201a6f352c",
+  "purpose": "disable",
+  "client_name": "Synthetic client",
+  "client_version": "2026.10-preview",
+  "session_ref": "session:synthetic",
+  "discovered": true,
+  "invoked": null,
+  "observed_at": "2026-10-13T12:34:56.123Z",
+  "evidence_refs": [
+    "probe:synthetic"
+  ]
+}

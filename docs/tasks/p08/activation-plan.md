@@ -1,0 +1,13 @@
+# P08 serial activation probe plan
+
+Only after the independent source-evaluation audit accepts current behavior, source validation and reviewed tests may generate manifest-bound validation/evaluation receipts. Source cycle1 and cycle2 timeouts remain failed/partial history. No native prepare occurs before those receipts.
+
+Coordinator alone uses DeploymentStore.prepare/finalize; use latest catalog CAS. Serialize delegate-work first, engineering-lead second. Native source manifests must match staged complete manifests at preparation. Preserve old P07 file hashes and all worktrees. Restore an uncommitted operation on unavailable or failed proof; never rebind prior session proof.
+
+Each fresh installed-client probe uses actual canonical root and inherited model/effort. Disable Python caches. Exact writes restricted to ignored work/p08/activation/<capability>/ and probe-owned plan artifacts; no shared contracts, catalog, state or unrelated source changes by the probe agent. Parent captures observations/events only. Read approved skill resources/source/controlled assignment only. Prepared operation and source evaluation are explicitly qualified; no premature ACTIVE claim.
+
+Skill probe: fresh installed root parent explicitly invokes $delegate-work, reads its workflow, and returns a concrete bounded assignment/review sequence for two independent utility modules. No children or implementation. It must preserve ownership/budget/dependency/review/cancellation rules. Public skills/list establishes actual name/path/discovery and raw trace establishes both resource reads and applied bounded plan. Generic native parent is the skill actor only, not represented as configured engineering-lead.
+
+Role probe after skill finalize: fresh parent invokes actual native engineering-lead with a scoped plan-only TaskAssignment; no pasted role instructions, generic replacement, model override or descendants. Child writes one owned plan file and returns current v1 Handoff. Parent validates identity/role/revision/filehash/evidence, then directly checks review-only probe artifacts; external p08_review audits configured role/source UUID identity and source unchanged. Public config/read plus thread/read establish actual configured role and invocation, actual skill resource reads support workflow. The probe does not claim full request routing or automatic model/cost policy.
+
+Finalize only matching NativeProbeReceipt: actual operation/version/complete manifest/client version/session/after-prepare time, discovered and invoked true, project-local observed evidence. Final independent integration review binds actual installed bytes, catalog and local receipts; fresh tests/CLI completion follow.

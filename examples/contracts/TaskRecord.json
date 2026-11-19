@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "id": "task-01",
+  "revision": 1,
+  "request": {
+    "schema_version": 1,
+    "request_id": "request-01",
+    "text": "Draft synthetic report",
+    "project_id": "project-01",
+    "source_refs": [
+      "notes:synthetic"
+    ],
+    "requested_role": null
+  },
+  "status": "verifying",
+  "phase": "testing",
+  "parent_task_id": null,
+  "capability_ids": [
+    "writer-01"
+  ],
+  "criteria": [
+    {
+      "id": "criterion-01",
+      "description": "Check synthetic output",
+      "verification_method": "unittest"
+    }
+  ],
+  "selection": {
+    "catalog_revision": 1,
+    "agents": [
+      {
+        "id": "writer-01",
+        "version": "1.0.0",
+        "deployed_sha256": "caac765556bda421e7e5b3e462b1c327c7509daabd132c97cb6adb201a6f352c"
+      }
+    ],
+    "skills": [
+      {
+        "id": "skill-01",
+        "version": "2.0.0",
+        "deployed_sha256": "f7db606cd8531930f393ffef80fd6f8e0909b2055eaf65c4b1cdee4dff3eda9a"
+      }
+    ]
+  },
+  "limits": {
+    "max_correction_cycles": 3,
+    "max_parallel_children": 2
+  },
+  "authorization": [
+    {
+      "action_kind": "write_local",
+      "resource_ref": "outputs/report.txt",
+      "source_ref": "user:request-01"
+    }
+  ],
+  "requested_actions": [
+    {
+      "action_ref": "action-01",
+      "kind": "write_local",
+      "resource_ref": "outputs/report.txt",
+      "required_tool": null,
+      "host_decision": "allowed"
+    }
+  ],
+  "cycles": [
+    {
+      "cycle_number": 1,
+      "design_ref": "design:synthetic",
+      "candidate": {
+        "artifacts": [
+          {
+            "id": "artifact-01",
+            "relative_path": "outputs/report.txt",
+            "sha256": "c754047df91498371094e9b9a225b55c27b3c266f4f54c8aae6fdcfe4279ed8f"
+          }
+        ],
+        "candidate_id": "ec7116265eb9ed061027ba89f4f7fb6c57edb1201f01f78d79220aa4f70e1791"
+      },
+      "acceptance": {
+        "criteria": [
+          {
+            "id": "criterion-01",
+            "description": "Check synthetic output",
+            "verification_method": "unittest"
+          }
+        ],
+        "design_sha256": "c754047df91498371094e9b9a225b55c27b3c266f4f54c8aae6fdcfe4279ed8f",
+        "acceptance_id": "9819bc19aad331aa71f83f6c39062c43bdd6cbddadc26ddf904d0a6ccdd25e39"
+      },
+      "review": {
+        "reviewer_ref": "reviewer:synthetic",
+        "implementer_ref": "writer:synthetic",
+        "candidate_id": "ec7116265eb9ed061027ba89f4f7fb6c57edb1201f01f78d79220aa4f70e1791",
+        "acceptance_id": "9819bc19aad331aa71f83f6c39062c43bdd6cbddadc26ddf904d0a6ccdd25e39",
+        "observed_at": "2026-10-13T12:34:56.123Z",
+        "findings": [
+          {
+            "id": "finding-01",
+            "severity": "minor",
+            "description": "Clarify section title",
+            "criterion_ids": [
+              "criterion-01"
+            ]
+          }
+        ]
+      },
+      "dispositions": [
+        {
+          "finding_id": "finding-01",
+          "decision": "corrected",
+          "reason": "Title clarified",
+          "evidence_refs": [
+            "diff:synthetic"
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "check_id": "check-01",
+          "criterion_ids": [
+            "criterion-01"
+          ],
+          "candidate_id": "ec7116265eb9ed061027ba89f4f7fb6c57edb1201f01f78d79220aa4f70e1791",
+          "acceptance_id": "9819bc19aad331aa71f83f6c39062c43bdd6cbddadc26ddf904d0a6ccdd25e39",
+          "method": "command",
+          "command": "python3 -m unittest tests.test_contracts",
+          "observation": null,
+          "environment": {
+            "python": "3.11"
+          },
+          "outcome": "pass",
+          "evidence_ref": "test:synthetic",
+          "observed_at": "2026-10-13T12:34:56.123Z"
+        },
+        {
+          "check_id": "check-02",
+          "criterion_ids": [
+            "criterion-01"
+          ],
+          "candidate_id": "ec7116265eb9ed061027ba89f4f7fb6c57edb1201f01f78d79220aa4f70e1791",
+          "acceptance_id": "9819bc19aad331aa71f83f6c39062c43bdd6cbddadc26ddf904d0a6ccdd25e39",
+          "method": "observation",
+          "command": null,
+          "observation": "All requested sections present",
+          "environment": {
+            "python": "3.11"
+          },
+          "outcome": "pass",
+          "evidence_ref": "test:synthetic",
+          "observed_at": "2026-10-13T12:34:56.123Z"
+        }
+      ]
+    }
+  ],
+  "blockers": [],
+  "resume_next_step": "",
+  "artifact_root": "synthetic:artifact-root"
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "claim_id": "claim-2",
+    "text": "Friday is proposed.",
+    "section": "Summary",
+    "kind": "proposal",
+    "owner": "Unspecified",
+    "due": "Unspecified",
+    "citations": [
+      {
+        "source_id": "email-1",
+        "excerpt": "Friday is proposed.",
+        "url": "https://outlook.office.com/mail/id/1",
+        "provider": "outlook",
+        "record_id": "email-1",
+        "completeness": "partial",
+        "retrieved_at": "2026-11-02T15:00:00Z",
+        "message_at": "2026-11-01T15:00:00Z",
+        "evidence_ref": "raw/email-1.json"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-1",
+    "text": "Alex will prepare the checklist.",
+    "section": "Action items",
+    "kind": "fact",
+    "owner": "Alex",
+    "due": "Unspecified",
+    "citations": [
+      {
+        "source_id": "email-1",
+        "excerpt": "Alex will prepare the checklist.",
+        "url": "https://outlook.office.com/mail/id/1",
+        "provider": "outlook",
+        "record_id": "email-1",
+        "completeness": "partial",
+        "retrieved_at": "2026-11-02T15:00:00Z",
+        "message_at": "2026-11-01T15:00:00Z",
+        "evidence_ref": "raw/email-1.json"
+      }
+    ]
+  },
+  {
+    "claim_id": "claim-3",
+    "text": "The target date is still open.",
+    "section": "Open questions",
+    "kind": "fact",
+    "owner": "Unspecified",
+    "due": "Unspecified",
+    "citations": [
+      {
+        "source_id": "slack-1",
+        "excerpt": "The target date is still open.",
+        "url": "https://example.slack.com/archives/C1/p123456",
+        "provider": "slack",
+        "record_id": "slack-1",
+        "completeness": "full",
+        "retrieved_at": "2026-11-02T15:00:00Z",
+        "message_at": "2026-11-01T15:00:00Z",
+        "evidence_ref": "raw/slack-1.json"
+      }
+    ]
+  }
+]

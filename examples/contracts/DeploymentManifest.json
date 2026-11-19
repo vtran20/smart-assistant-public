@@ -1,0 +1,9 @@
+{
+  "files": [
+    {
+      "relative_path": "agents/writer.toml",
+      "sha256": "c754047df91498371094e9b9a225b55c27b3c266f4f54c8aae6fdcfe4279ed8f"
+    }
+  ],
+  "manifest_sha256": "caac765556bda421e7e5b3e462b1c327c7509daabd132c97cb6adb201a6f352c"
+}

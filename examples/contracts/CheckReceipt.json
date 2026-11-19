@@ -1,0 +1,17 @@
+{
+  "check_id": "check-01",
+  "criterion_ids": [
+    "criterion-01"
+  ],
+  "candidate_id": "ec7116265eb9ed061027ba89f4f7fb6c57edb1201f01f78d79220aa4f70e1791",
+  "acceptance_id": "9819bc19aad331aa71f83f6c39062c43bdd6cbddadc26ddf904d0a6ccdd25e39",
+  "method": "command",
+  "command": "python3 -m unittest tests.test_contracts",
+  "observation": null,
+  "environment": {
+    "python": "3.11"
+  },
+  "outcome": "pass",
+  "evidence_ref": "test:synthetic",
+  "observed_at": "2026-10-13T12:34:56.123Z"
+}

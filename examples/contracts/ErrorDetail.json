@@ -1,0 +1,5 @@
+{
+  "code": "invalid_id",
+  "path": "$.request_id",
+  "message": "Malformed request ID"
+}

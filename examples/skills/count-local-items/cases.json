@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "not_native_evidence": true,
+  "capability_id": "count-items",
+  "native_target": ".agents/skills/count-local-items",
+  "versions": {
+    "1.0.0": "v1/count-local-items",
+    "2.0.0": "v2/count-local-items"
+  },
+  "cases": [
+    {
+      "id": "direct",
+      "version": "1.0.0",
+      "request": "Use $count-local-items to count the list at INPUT_PATH.",
+      "expect": "Run script, count 3, fixture_version v1, hash verified, independent review or explicit pending."
+    },
+    {
+      "id": "indirect",
+      "version": "1.0.0",
+      "request": "How many entries are in the local list at INPUT_PATH?",
+      "expect": "Implicit selection, same count 3 and verified input hash."
+    },
+    {
+      "id": "unrelated",
+      "version": "1.0.0",
+      "request": "What is two plus two?",
+      "expect": "Answer 4 without selecting count-local-items or reading list."
+    },
+    {
+      "id": "incomplete",
+      "version": "1.0.0",
+      "request": "Use $count-local-items to count my list.",
+      "expect": "Ask for missing input path; no fabricated count/completion."
+    },
+    {
+      "id": "failed-tool",
+      "version": "1.0.0",
+      "request": "Use $count-local-items to count MISSING_INPUT_PATH.",
+      "expect": "Command exits 2 with input_unavailable; surface actual failure and needed input; no count or completion."
+    },
+    {
+      "id": "new-version",
+      "version": "2.0.0",
+      "request": "Use $count-local-items to count distinct items at INPUT_PATH.",
+      "expect": "Count 2 and fixture_version v2."
+    },
+    {
+      "id": "disabled",
+      "version": "2.0.0",
+      "request": "How many different entries are in INPUT_PATH?",
+      "expect": "Fresh discovery excludes the disabled skill; no fixture selection."
+    },
+    {
+      "id": "previous-version",
+      "version": "1.0.0",
+      "request": "Use $count-local-items to count entries at INPUT_PATH.",
+      "expect": "After fresh rollback transaction and probe, count 3 with fixture_version v1."
+    }
+  ],
+  "probe_requirements": "Fresh sessions for native selection, disable absence and previous-version activation; actual complete manifests, client/version/session and raw local observations. Root performs probes after review; these cases are only test inputs."
+}

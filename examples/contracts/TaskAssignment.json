@@ -1,0 +1,64 @@
+{
+  "task_id": "task-01",
+  "assignment_revision": 1,
+  "role_id": "writer-01",
+  "selected_skill_ids": [
+    "skill-01"
+  ],
+  "design_ref": "design:synthetic",
+  "criteria": [
+    {
+      "id": "criterion-01",
+      "description": "Check synthetic output",
+      "verification_method": "unittest"
+    }
+  ],
+  "context": {
+    "schema_version": 1,
+    "project_id": "project-01",
+    "preferences": {
+      "language": "Tiếng Việt",
+      "nested": [
+        true,
+        null,
+        2,
+        1.25,
+        {
+          "style": "concise"
+        }
+      ]
+    },
+    "facts": [
+      {
+        "text": "Synthetic project context",
+        "scope": "project",
+        "source_ref": "notes:synthetic",
+        "observed_at": "2026-10-13T12:34:56.123Z"
+      }
+    ]
+  },
+  "owned_paths": [
+    "outputs/report.txt"
+  ],
+  "selection": {
+    "catalog_revision": 1,
+    "agents": [
+      {
+        "id": "writer-01",
+        "version": "1.0.0",
+        "deployed_sha256": "caac765556bda421e7e5b3e462b1c327c7509daabd132c97cb6adb201a6f352c"
+      }
+    ],
+    "skills": [
+      {
+        "id": "skill-01",
+        "version": "2.0.0",
+        "deployed_sha256": "f7db606cd8531930f393ffef80fd6f8e0909b2055eaf65c4b1cdee4dff3eda9a"
+      }
+    ]
+  },
+  "limits": {
+    "max_correction_cycles": 3,
+    "max_parallel_children": 2
+  }
+}

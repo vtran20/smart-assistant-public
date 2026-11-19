@@ -1,0 +1,17 @@
+# Tom and Jerry delivery workflow
+
+Tom is the single coordinator in the main chat; Jerry is the engineering-lead display name. The [team profile](../examples/teams/core/team.json) describes six DRAFT roles. Genuine native discovery, invocation and manifest-bound behavior remain required before activation. Names/files grant no eligibility.
+
+Use request-coordination and owning-project instructions. Tom interprets intent and saves rationale; helpers validate the decision. Small authorized tasks may stay direct. Missing roles/tools/context remain explicit; generic workers cannot impersonate configured specialists. For substantial work, pass scoped context, design, criteria, exact files, dependencies and shared limits.
+
+For bugs, reproduce at the agreed proof level before repair and retain authentic before evidence. Map every requirement to cases. Implement within ownership, freeze candidate, obtain independent review, resolve feedback, re-review changes, repeat the scenario and run all required final checks. UI proof uses actual captures; nonvisual proof may be actual command/log or failing/passing test evidence. Generated pictures/logs do not prove observations. Missing required runtime proof remains blocked.
+
+[P11](tasks/p11/interfaces.md) saves assignments, dependency pins, run observations and bound handoffs. [P12](evidence/p12/interfaces.md) binds current product/design/context and immutable evidence to requirements/cases and actual review-completion time. Ready-for-review is not accepted delivery. Changed predecessors invalidate dependent acceptance. Tom serializes integration, independent combined review and fresh checks before actual completion.
+
+[P16](evidence/p16/interfaces.md) defines final reviewed shared-store/CLI behavior. Registered tasks carry immutable policy references. Interrupted registration blocks dispatch/completion. Migration creates a new linked task without changing/reopening the original. Every supported completion path enforces mandatory policy, including direct callers with passing callbacks. Evidence recovery names exact known revisions/hashes, never newest files or invented missing authority. Use actual CLI help and the progress record (local historical archive: `evidence/tom-orchestration/progress.json`) for current readiness.
+
+Keep private state and raw customer screenshots/logs/captures in owning-project ignored storage. Synthetic fixtures are not real host/review observations. Hashes establish integrity, not authenticity or semantic truth. Unknown live children consume capacity until reconciled. Preserve failure/cancellation/history and a next action.
+
+The ignored local Xstore profile stores the supplied KB location. Resolve actual project/version before coding. Generic knowledge does not establish project facts; unknown applicability stays unusable and updates never silently repin active tasks. Follow [scoped learning](learning-workflow.md): retrieve applicable confirmed/validated lessons, retain uncertainty as candidate, sanitize and independently review shared contributions within recorded authorization. Knowledge does not grant permissions or human acceptance.
+
+Tom returns outcome/candidate, actual worker/reviewer/verifier contexts, case totals, authentic before/after evidence, exact checks/environment/proof scope, dispositions, learning updates and blockers. Completed means full registered acceptance passed. Native activation, live customer acceptance and commit/merge/push remain separate checkpoints. No unattended service or model training is implied.

@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "project_id": "project-01",
+  "preferences": {
+    "language": "Tiếng Việt",
+    "nested": [
+      true,
+      null,
+      2,
+      1.25,
+      {
+        "style": "concise"
+      }
+    ]
+  },
+  "facts": [
+    {
+      "text": "Synthetic project context",
+      "scope": "project",
+      "source_ref": "notes:synthetic",
+      "observed_at": "2026-10-13T12:34:56.123Z"
+    }
+  ]
+}

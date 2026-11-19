@@ -1,0 +1,1 @@
+Create a concise pilot report from supplied notes, with Summary, Decisions, Action items and Open questions. Write outputs/report.md and outputs/source-map.md inside the assigned artifact root. Preserve missing owners/dates as Unspecified. For the empty-source scenario only, the supplied notes are expressly empty and the empty-source report is requested. No external actions.

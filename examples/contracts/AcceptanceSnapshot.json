@@ -1,0 +1,11 @@
+{
+  "criteria": [
+    {
+      "id": "criterion-01",
+      "description": "Check synthetic output",
+      "verification_method": "unittest"
+    }
+  ],
+  "design_sha256": "c754047df91498371094e9b9a225b55c27b3c266f4f54c8aae6fdcfe4279ed8f",
+  "acceptance_id": "9819bc19aad331aa71f83f6c39062c43bdd6cbddadc26ddf904d0a6ccdd25e39"
+}

@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "request_id": "request-01",
+  "text": "Draft synthetic report",
+  "project_id": "project-01",
+  "source_refs": [
+    "notes:synthetic"
+  ],
+  "requested_role": null
+}

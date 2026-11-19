@@ -1,0 +1,4 @@
+{
+  "max_correction_cycles": 3,
+  "max_parallel_children": 2
+}

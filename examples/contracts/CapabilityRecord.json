@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "writer-01",
+  "kind": "agent",
+  "name": "Synthetic Writer",
+  "version": "1.0.0",
+  "state": "active",
+  "source_path": "capabilities/staging/writer.toml",
+  "deployed_path": "agents/writer.toml",
+  "deployed_sha256": "caac765556bda421e7e5b3e462b1c327c7509daabd132c97cb6adb201a6f352c",
+  "triggers": [
+    "draft report"
+  ],
+  "boundaries": [
+    "local synthetic inputs"
+  ],
+  "required_inputs": [
+    "notes"
+  ],
+  "output_contract_ref": "Handoff",
+  "tool_dependencies": [
+    "tool:local-write"
+  ],
+  "validation_refs": [
+    "test:synthetic"
+  ],
+  "discovery_probe_ref": "probe:synthetic",
+  "rollback_ref": null
+}

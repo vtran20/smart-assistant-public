@@ -1,0 +1,30 @@
+# Registered delivery through Tom
+
+Use this for new durable requests. The [older record reference](records.md) remains useful for v1 fields and legacy resumption; it does not replace registration for new Tom delivery. Read project document `project document: docs/tom-orchestration-workflow.md` (runbook), project document `project document: docs/tasks/p11/interfaces.md` (P11 exact records), project document `project document: docs/evidence/p12/interfaces.md` (P12 evidence) and project document `project document: docs/evidence/p16/interfaces.md` (P16 commands) only as needed.
+
+## Intake and registration
+
+The steps below describe managed schema1.0 registration. For the separately approved builtin-worker mode, read [builtin execution](builtin.md) before constructing the immutable request. It adds an exact execution decision marker and uses strict schema2.0 assignments/snapshot through the request-bound codec; never place a generic worker into a managed envelope. Existing managed requests/history/wire formats remain unchanged.
+
+1. Establish project, outcome, actual user authority, design/criteria, evidence level and next action. A missing bug source/reproduction may block repair while task/design setup proceeds honestly. Do not create passing checks or invented observations.
+2. Read `project profile: examples/teams/core/team.json` through actual `team show`; observe tools and catalog eligibility/preflight. Tom is the actual bootstrap root, with no fabricated ACTIVE self-entry. Jerry keeps engineering-lead identity. New DRAFT roles cannot be selected as ACTIVE; authorized direct work can use empty selections, without pretending a generic child is a configured role.
+3. Construct strict `DeliveryPolicy` from the real request/design and its actual source digest. Use `delivery_records.policy_source_ref(policy)` to generate the reserved reference. Include this reference in `TaskRecord.request.source_refs` BEFORE saving the immutable request. Policy has no request hash, so no digest cycle is needed. Source-only reproduction cannot satisfy an independently required runtime level.
+4. Create a queued/design v1 TaskRecord with genuine criteria, actual artifact root, observed catalog revision, limits, authorization/preflight and no fabricated cycles. Use v1 `to_dict` for v1 records. Keep operational files in an ignored state root and use `task create --record ... --state-dir ...`.
+5. Build the strict initial `DeliverySnapshot` with the saved task identity/request digest and exact policy digest. Its registration binds task/request/policy; initial snapshot/plan revisions are one and previous digest null. Plan binds actual design, criteria/acceptance and scoped context hashes, root owner and routing rationale. Use `quality.acceptance_snapshot` and existing canonical JSON/digest APIs on real bytes, never invented hash placeholders. No assignments/dispatches/submissions/decisions are required merely to queue a root-owned request; do not manufacture a specialist to populate them. Use the separate delivery codec `delivery_to_dict` for these new records, not v1 `to_dict`.
+6. Run `delivery create --record SNAPSHOT --expected-task-revision N --state-dir ROOT`, then `delivery show ID --state-dir ROOT`. Confirm authoritative registration was saved; a v1 task file alone is not successful Tom setup. Registration failure preserves queued history and an explicit blocker. Never remove the marker, ignore failed registration or fall back to legacy to claim setup/completion.
+
+If a legacy-only record was accidentally saved, its request is immutable. Preserve it and create a new linked registered task rather than editing the original source refs or reopening a terminal record. Existing genuine legacy work may resume under its original policy; do not silently migrate it.
+
+## Execute and verify
+
+For bugs, capture authentic declared-level reproduction before repair. Bind before/after scenario, input/environment/build and actual outcome. Screenshots prove visible behavior only; logs/tests/receipts establish their declared scope. Required UI/runtime/backend acceptance stays open when unavailable. Design → implement → independent review → feedback → fresh tests → repeat remains mandatory.
+
+Before actual dispatch, persist exact ownership/dependencies, dispatch intent and bounded limits. Record actual host actor/run/source observations immediately after spawn. Ambiguous startup consumes capacity. Validate current selection/preflight again on resume. Use `HandoffSubmission` and genuine historical dispatch binding before v1 handoff validation. Ready-for-review is not accepted. Do not invent an ACTIVE source identity, role proof or host receipt to satisfy a schema.
+
+After exact-candidate independent review and all required checks, create the strict P12 matrix/evidence bundle from actual observations. `SemanticReview.reviewed_at` and v1 review observed_at describe the SAME review-completion instant; a run's observed_at describes host observation/start. Preserve real source proof and all failures. Different labels are not independent actors.
+
+Save evidence with task/delivery/evidence CAS using `delivery evidence save`; delivery updates invalidate stale evidence. Use `delivery check`, then actual `task complete` or update-to-completed. Direct-store callers and both CLI forms enforce mandatory current evidence before and after callbacks under the shared lock. A passing callback cannot waive it. Recovery names an exact known revision/hash and revalidates current bindings; never infer authority from newest files or invent missing committed history.
+
+Return one honest report with actual candidate, case denominator/results, before/after links, independent findings/dispositions, exact checks/proof scope, knowledge updates and blockers. Task setup is not implementation or completion. Generic-context source/helper tests are not managed-role/native or customer runtime acceptance.
+
+Project document/profile references above are scoped inputs beneath the actual assigned project root, not bundled skill resources. Read them only within current project authorization.

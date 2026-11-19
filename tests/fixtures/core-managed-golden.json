@@ -1,0 +1,320 @@
+{
+  "DeliveryPolicy": {
+    "wire": {
+      "schema_version": "1.0",
+      "policy_id": "policy-01",
+      "policy_version": "1.0.0",
+      "workflow_kind": "feature",
+      "source_ref": "design/policy.md",
+      "source_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "reproduction_required": false,
+      "independent_review_required": true,
+      "required_verification_levels": [
+        "unit"
+      ],
+      "max_executing": 2,
+      "max_correction_cycles": 3
+    },
+    "sha256": "81ee6383fcab1e4dd54112f6dd30022f3a5f696bfa884589f4daad9ef89c5329"
+  },
+  "DeliveryRegistration": {
+    "wire": {
+      "schema_version": "1.0",
+      "task_id": "task-01",
+      "request_sha256": "0d851d562faae7b5e770e2f0093400d7f743be20416d79dec80ba525e66189b6",
+      "policy_id": "policy-01",
+      "policy_sha256": "81ee6383fcab1e4dd54112f6dd30022f3a5f696bfa884589f4daad9ef89c5329",
+      "registered_at": "2026-11-03T10:00:00Z"
+    },
+    "sha256": "55751462194fb21e5a9d928e7648c49c4b2672fecb99c28c55180835978a9bd5"
+  },
+  "DeliveryPlan": {
+    "wire": {
+      "schema_version": "1.0",
+      "task_id": "task-01",
+      "revision": 1,
+      "request_sha256": "0d851d562faae7b5e770e2f0093400d7f743be20416d79dec80ba525e66189b6",
+      "policy_sha256": "81ee6383fcab1e4dd54112f6dd30022f3a5f696bfa884589f4daad9ef89c5329",
+      "root_owner_ref": "root-chat",
+      "design_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "acceptance_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "routing_rationale": "Synthetic feature",
+      "requirement_ids": [
+        "criterion-01"
+      ],
+      "assignment_ids": [
+        "worker-01"
+      ],
+      "max_executing": 2,
+      "max_correction_cycles": 3,
+      "context_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "next_step": "Implement"
+    },
+    "sha256": "fbe949de6507476f0e7fe344eae93244d71e3e7e6ef08dff80e1e15c1538be32"
+  },
+  "DeliverySnapshot": {
+    "wire": {
+      "schema_version": "1.0",
+      "task_id": "task-01",
+      "revision": 1,
+      "previous_sha256": null,
+      "registration": {
+        "schema_version": "1.0",
+        "task_id": "task-01",
+        "request_sha256": "0d851d562faae7b5e770e2f0093400d7f743be20416d79dec80ba525e66189b6",
+        "policy_id": "policy-01",
+        "policy_sha256": "81ee6383fcab1e4dd54112f6dd30022f3a5f696bfa884589f4daad9ef89c5329",
+        "registered_at": "2026-11-03T10:00:00Z"
+      },
+      "policy": {
+        "schema_version": "1.0",
+        "policy_id": "policy-01",
+        "policy_version": "1.0.0",
+        "workflow_kind": "feature",
+        "source_ref": "design/policy.md",
+        "source_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "reproduction_required": false,
+        "independent_review_required": true,
+        "required_verification_levels": [
+          "unit"
+        ],
+        "max_executing": 2,
+        "max_correction_cycles": 3
+      },
+      "plan": {
+        "schema_version": "1.0",
+        "task_id": "task-01",
+        "revision": 1,
+        "request_sha256": "0d851d562faae7b5e770e2f0093400d7f743be20416d79dec80ba525e66189b6",
+        "policy_sha256": "81ee6383fcab1e4dd54112f6dd30022f3a5f696bfa884589f4daad9ef89c5329",
+        "root_owner_ref": "root-chat",
+        "design_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "acceptance_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "routing_rationale": "Synthetic feature",
+        "requirement_ids": [
+          "criterion-01"
+        ],
+        "assignment_ids": [
+          "worker-01"
+        ],
+        "max_executing": 2,
+        "max_correction_cycles": 3,
+        "context_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "next_step": "Implement"
+      },
+      "assignments": [
+        {
+          "schema_version": "1.0",
+          "assignment_id": "worker-01",
+          "revision": 1,
+          "task_id": "task-01",
+          "parent_assignment_id": null,
+          "required": true,
+          "payload": {
+            "task_id": "task-01",
+            "assignment_revision": 1,
+            "role_id": "writer-01",
+            "selected_skill_ids": [
+              "skill-01"
+            ],
+            "design_ref": "design:synthetic",
+            "criteria": [
+              {
+                "id": "criterion-01",
+                "description": "Check synthetic output",
+                "verification_method": "unittest"
+              }
+            ],
+            "context": {
+              "schema_version": 1,
+              "project_id": "project-01",
+              "preferences": {
+                "language": "Tiếng Việt",
+                "nested": [
+                  true,
+                  null,
+                  2,
+                  1.25,
+                  {
+                    "style": "concise"
+                  }
+                ]
+              },
+              "facts": [
+                {
+                  "text": "Synthetic project context",
+                  "scope": "project",
+                  "source_ref": "notes:synthetic",
+                  "observed_at": "2026-10-13T12:34:56.123Z"
+                }
+              ]
+            },
+            "owned_paths": [
+              "outputs/result.md"
+            ],
+            "selection": {
+              "catalog_revision": 1,
+              "agents": [
+                {
+                  "id": "writer-01",
+                  "version": "1.0.0",
+                  "deployed_sha256": "caac765556bda421e7e5b3e462b1c327c7509daabd132c97cb6adb201a6f352c"
+                }
+              ],
+              "skills": [
+                {
+                  "id": "skill-01",
+                  "version": "2.0.0",
+                  "deployed_sha256": "f7db606cd8531930f393ffef80fd6f8e0909b2055eaf65c4b1cdee4dff3eda9a"
+                }
+              ]
+            },
+            "limits": {
+              "max_correction_cycles": 3,
+              "max_parallel_children": 2
+            }
+          },
+          "selected_role_id": "writer-01",
+          "selected_role_version": "1.0.0",
+          "selected_manifest_sha256": "caac765556bda421e7e5b3e462b1c327c7509daabd132c97cb6adb201a6f352c",
+          "base_ref": "synthetic-base",
+          "workspace_id": "project-01",
+          "worktree_root": "/private/tmp/synthetic-p11",
+          "owned_paths": [
+            "outputs/result.md"
+          ],
+          "dependencies": [],
+          "state": "proposed",
+          "dispatch_token": null,
+          "observed_run": null,
+          "output_sha256": null,
+          "handoff_submission_id": null,
+          "review_refs": [],
+          "invalidated_by": []
+        }
+      ],
+      "dispatches": [],
+      "submissions": [],
+      "decisions": []
+    },
+    "sha256": "a94ec0578c86ee7dfab25398830d54c702525e610299fe6068f2b7da86689b32"
+  },
+  "AssignmentEnvelope": {
+    "wire": {
+      "schema_version": "1.0",
+      "assignment_id": "worker-01",
+      "revision": 1,
+      "task_id": "task-01",
+      "parent_assignment_id": null,
+      "required": true,
+      "payload": {
+        "task_id": "task-01",
+        "assignment_revision": 1,
+        "role_id": "writer-01",
+        "selected_skill_ids": [
+          "skill-01"
+        ],
+        "design_ref": "design:synthetic",
+        "criteria": [
+          {
+            "id": "criterion-01",
+            "description": "Check synthetic output",
+            "verification_method": "unittest"
+          }
+        ],
+        "context": {
+          "schema_version": 1,
+          "project_id": "project-01",
+          "preferences": {
+            "language": "Tiếng Việt",
+            "nested": [
+              true,
+              null,
+              2,
+              1.25,
+              {
+                "style": "concise"
+              }
+            ]
+          },
+          "facts": [
+            {
+              "text": "Synthetic project context",
+              "scope": "project",
+              "source_ref": "notes:synthetic",
+              "observed_at": "2026-10-13T12:34:56.123Z"
+            }
+          ]
+        },
+        "owned_paths": [
+          "outputs/result.md"
+        ],
+        "selection": {
+          "catalog_revision": 1,
+          "agents": [
+            {
+              "id": "writer-01",
+              "version": "1.0.0",
+              "deployed_sha256": "caac765556bda421e7e5b3e462b1c327c7509daabd132c97cb6adb201a6f352c"
+            }
+          ],
+          "skills": [
+            {
+              "id": "skill-01",
+              "version": "2.0.0",
+              "deployed_sha256": "f7db606cd8531930f393ffef80fd6f8e0909b2055eaf65c4b1cdee4dff3eda9a"
+            }
+          ]
+        },
+        "limits": {
+          "max_correction_cycles": 3,
+          "max_parallel_children": 2
+        }
+      },
+      "selected_role_id": "writer-01",
+      "selected_role_version": "1.0.0",
+      "selected_manifest_sha256": "caac765556bda421e7e5b3e462b1c327c7509daabd132c97cb6adb201a6f352c",
+      "base_ref": "synthetic-base",
+      "workspace_id": "project-01",
+      "worktree_root": "/private/tmp/synthetic-p11",
+      "owned_paths": [
+        "outputs/result.md"
+      ],
+      "dependencies": [],
+      "state": "proposed",
+      "dispatch_token": null,
+      "observed_run": null,
+      "output_sha256": null,
+      "handoff_submission_id": null,
+      "review_refs": [],
+      "invalidated_by": []
+    },
+    "sha256": "3d592f4d9d9b249dd0e113570d68aaaa8b99fda100f5399581e80abbf36b8cf7"
+  },
+  "DispatchIntent": {
+    "wire": {
+      "schema_version": "1.0",
+      "dispatch_token": "token-01",
+      "assignment_id": "worker-01",
+      "envelope_revision": 2,
+      "envelope_sha256": "b2e67bce26a8ecdeab5f1f3cd9adc266552314264f578ff9b859bc5a8a5aadd9",
+      "created_at": "2026-11-03T10:00:00Z",
+      "state": "pending",
+      "observed_run": null,
+      "reconciliation_ref": null
+    },
+    "sha256": "0275610ef5de2d1645808d4f09f847a8f60bc333b5b5a8fab19cd695a6d5e1ef"
+  },
+  "ObservedRun": {
+    "wire": {
+      "schema_version": "1.0",
+      "host_ref": "host-01",
+      "actor_ref": "actor-01",
+      "run_ref": "run-01",
+      "dispatch_token": "token-01",
+      "observed_at": "2026-11-03T10:00:00Z",
+      "observation_ref": "observations/spawn.json"
+    },
+    "sha256": "12eff3fac1474f478ef2eab22dd9d92bd97733279293575bc34b285ab856df11"
+  }
+}

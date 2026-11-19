@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "revision": 1,
+  "records": [
+    {
+      "schema_version": 1,
+      "id": "writer-01",
+      "kind": "agent",
+      "name": "Synthetic Writer",
+      "version": "1.0.0",
+      "state": "active",
+      "source_path": "capabilities/staging/writer.toml",
+      "deployed_path": "agents/writer.toml",
+      "deployed_sha256": "caac765556bda421e7e5b3e462b1c327c7509daabd132c97cb6adb201a6f352c",
+      "triggers": [
+        "draft report"
+      ],
+      "boundaries": [
+        "local synthetic inputs"
+      ],
+      "required_inputs": [
+        "notes"
+      ],
+      "output_contract_ref": "Handoff",
+      "tool_dependencies": [
+        "tool:local-write"
+      ],
+      "validation_refs": [
+        "test:synthetic"
+      ],
+      "discovery_probe_ref": "probe:synthetic",
+      "rollback_ref": null
+    },
+    {
+      "schema_version": 1,
+      "id": "skill-01",
+      "kind": "skill",
+      "name": "Synthetic Skill",
+      "version": "2.0.0",
+      "state": "active",
+      "source_path": "capabilities/staging/skill/SKILL.md",
+      "deployed_path": "skills/skill",
+      "deployed_sha256": "f7db606cd8531930f393ffef80fd6f8e0909b2055eaf65c4b1cdee4dff3eda9a",
+      "triggers": [
+        "draft report"
+      ],
+      "boundaries": [
+        "local synthetic inputs"
+      ],
+      "required_inputs": [
+        "notes"
+      ],
+      "output_contract_ref": "Handoff",
+      "tool_dependencies": [
+        "tool:local-write"
+      ],
+      "validation_refs": [
+        "test:synthetic"
+      ],
+      "discovery_probe_ref": "probe:synthetic",
+      "rollback_ref": null
+    }
+  ]
+}

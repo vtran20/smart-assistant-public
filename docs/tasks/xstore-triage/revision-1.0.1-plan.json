@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-03T01:54:43.613476+00:00",
+  "status": "Authorized local corrective DRAFT work only; no further native/model execution or activation",
+  "design": "design.md and original assessment-contract.json remain normative",
+  "evidence": "source-A-independent-review.json",
+  "candidate": "xstore-triage capability1.0.1, same immutable knowledgepack1.0.0",
+  "preservation": "Original seven frozen assets, original development.json, actual original reports and all failures remain unchanged. New files only.",
+  "new_owned_source_files": [
+    "examples/agents/xstore-triage/versions/1.0.1/xstore-triage.toml",
+    "examples/agents/xstore-triage/versions/1.0.1/README.md",
+    "docs/evidence/xstore-triage/revision-1.0.1/source-checks.json"
+  ],
+  "coordinator_owned_files": [
+    "examples/scenarios/xstore-triage/development-v2.json",
+    "docs/xstore-triage-workflow.md",
+    "README.md links",
+    "capability-backlog evidence links",
+    "final evidence/tasktracking"
+  ],
+  "behavior_correction": "Follow the requested degree of certainty exactly: could/possible is not actually/currently proven. Bounded supplied-evidence report readiness is separate from unrequested runtime/business acceptance. Keep blocked for an essential requested input/tool/conclusion that is genuinely missing; preserve useful partial facts. Do not add case IDs, canned facts, expected gate answers or generic unconditional readiness.",
+  "knowledge": "Keep complete old pack bytes/id/version/rawSHA embedded once, unchanged; all operational correction text stays in complete new TOML manifest, model/effort/permissions inherited via same three-field schema",
+  "verification": [
+    "Independent prompt/specification then quality/knowledge-boundary review of exact new bytes",
+    "Current three-field validator, rawpack embedding/digest and complete deployment manifest; original assets unchanged",
+    "Compare v2 input to original: only A1question clarified plus metadata; controls and other cases unchanged; no expected statuses in input",
+    "Full existing suite fresh after feedback; native behavior of1.0.1 remains UNASSESSED until genuine future runs"
+  ],
+  "runtime_limits": "No additional parent/model/child calls authorized. Existing actual sourceA remains unaccepted; do not retrospectively pass it. Native discovery binding unsupported remains a release blocker. Newcandidate requires fresh applicable evaluation/proof and prospectively reviewed remaining budget before use.",
+  "integration": "Canonical feature branch only, no commit/push/main change. Stage immutable DRAFT1.0.1 via publichelper after exact review; do notprepare/finalize orwrite native target/catalogACTIVE.",
+  "work_cycle": "design -> implement -> independent review -> recordedfeedback -> fresh tests -> repeat; review artifacts checked by root without recursion"
+}

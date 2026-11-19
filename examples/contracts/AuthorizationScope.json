@@ -1,0 +1,5 @@
+{
+  "action_kind": "write_local",
+  "resource_ref": "outputs/report.txt",
+  "source_ref": "user:request-01"
+}

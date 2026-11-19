@@ -1,0 +1,42 @@
+[
+  {
+    "id": "report_sections",
+    "description": "All four required sections appear once and in order, including explicit content when source coverage is empty",
+    "verification_method": "Fresh local structural check plus native readable-output observation"
+  },
+  {
+    "id": "report_action_items",
+    "description": "Every supported source commitment/requested follow-up appears under Action items, including the negative missing-section fixture",
+    "verification_method": "Independent semantic source comparison and corrected-report observation"
+  },
+  {
+    "id": "report_source_fidelity",
+    "description": "Report/source map accurately preserve claims, decisions, uncertainty, conflicts and provenance, without new factual assertions",
+    "verification_method": "Independent native semantic review against frozen notes; coordinator fresh source comparison"
+  },
+  {
+    "id": "report_owner_dates",
+    "description": "Supported owners/dates preserved; unknown values remain unspecified; unrelated names/dates and host time never become invented claims",
+    "verification_method": "Native explicit-known/unknown/unsupported-claim cases"
+  },
+  {
+    "id": "report_readability",
+    "description": "Concise understandable report; section content suits notes and stated audience, with no unsupported \u201ccomplete\u201d claim",
+    "verification_method": "Independent readable-output observation"
+  },
+  {
+    "id": "report_evidence_gate",
+    "description": "Completion rejects incomplete, unresolved, failing or stale evidence, then accepts corrected independently reviewed/freshly checked bytes",
+    "verification_method": "Existing CLI/completion gate invoked on isolated synthetic task records"
+  },
+  {
+    "id": "report_resume",
+    "description": "Interruption preserves status, history, blockers and next step; fresh eligibility/preflight and exact candidate review precede resumed completion",
+    "verification_method": "Native interruption/resume case plus existing CLI revision/evidence checks"
+  },
+  {
+    "id": "report_native_assets",
+    "description": "Both configured roles and both selected skills are discovered and actually invoked at reviewed deployed manifests; native proof remains distinct from helper tests",
+    "verification_method": "P05/P06 lifecycle probes and installed-client observations"
+  }
+]

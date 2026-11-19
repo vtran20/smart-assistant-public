@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "title": "Selected work brief",
+  "sources_sha256": "764b45692910ae8176c24614c379524ed7beedcc72da2e66a6442533d11f609f",
+  "claims": [
+    {
+      "id": "claim-1",
+      "section": "Action items",
+      "kind": "fact",
+      "text": "Alex will prepare the checklist.",
+      "owner": "Alex",
+      "due": "Unspecified",
+      "citations": [
+        {
+          "source_id": "email-1",
+          "excerpt": "Alex will prepare the checklist."
+        }
+      ]
+    },
+    {
+      "id": "claim-2",
+      "section": "Summary",
+      "kind": "proposal",
+      "text": "Friday is proposed.",
+      "owner": "Unspecified",
+      "due": "Unspecified",
+      "citations": [
+        {
+          "source_id": "email-1",
+          "excerpt": "Friday is proposed."
+        }
+      ]
+    },
+    {
+      "id": "claim-3",
+      "section": "Open questions",
+      "kind": "fact",
+      "text": "The target date is still open.",
+      "owner": "Unspecified",
+      "due": "Unspecified",
+      "citations": [
+        {
+          "source_id": "slack-1",
+          "excerpt": "The target date is still open."
+        }
+      ]
+    }
+  ]
+}
